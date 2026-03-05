@@ -42,7 +42,7 @@ class WeatherInfo:
         self.observation_time = observation_time
 
     def __str__(self):
-        return (f"\n--- Weather Observation ---\n"
+        return (f"\n--- Weather Information ---\n"
                 f"City:             {self.city}, {self.country}\n"
                 f"Latitude:         {self.latitude}\n"
                 f"Longitude:        {self.longitude}\n"
