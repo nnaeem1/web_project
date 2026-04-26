@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Observations</title>
+</head>
+<body>
+    <h1>All Weather Observations</h1>
+    
+    <table border="1"> <!--Adds lines for table-->
+        <tr>
+            <th>ID</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Temperature (°C)</th>
+            <th>Wind Speed (km/h)</th>
+            <th>Observation Time</th>
+        </tr>
+        {% for obs in observations %} <!--Starts a loop-->
+        <tr>
+            <td>{{ obs[0] }}</td> <!--Observation_id-->
+            <td>{{ obs[1] }}</td> <!--city-->
+            <td>{{ obs[2] }}</td> <!--country-->
+            <td>{{ obs[3] }}</td> <!--temp-->
+            <td>{{ obs[4] }}</td> <!--windspeed-->
+            <td>{{ obs[5] }}</td> <!--observation time-->
+        </tr>
+        {% endfor %} <!--Ends the loop-->
+    </table>
+</body>
+</html>
